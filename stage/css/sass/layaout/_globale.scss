@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    font-family: 'Cairo', sans-serif;
+}
+.page 
+{
+    min-height: 100vh;
+    .content-area
+    {
+        width: calc(100% - 250px);
+        min-height: 100%;
+        transition: .3s;
+        will-change: width;
+    }
+}
