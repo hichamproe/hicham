@@ -6,7 +6,8 @@ var gulp                = require('gulp'),
     autoprefixer        = require('gulp-autoprefixer'),
     notify              = require("gulp-notify"),
     minify              = require('gulp-minify'),
-    sass                = require('gulp-sass');
+    sass                = require('gulp-sass'),
+    ghpages             = require('gh-pages');
 
 // Task For Html
 gulp.task('html', function() {
