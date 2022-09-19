@@ -1,2 +1,3 @@
-var container = document.querySelector(".container");
-container.innerHTML = "<h1>my name is hicham amal</h1>";
+$(".toggle-sidebar").on("click", function(){
+    $(".content-area, .sidebar").toggleClass("no-sidebar")
+});

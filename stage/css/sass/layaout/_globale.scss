@@ -12,8 +12,15 @@ body
     .content-area
     {
         width: calc(100% - 250px);
-        min-height: 100%;
-        transition: .3s;
+        min-height: 100vh;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+        float: right;
         will-change: width;
+        background-color: #c5c2d0;
+        
+        &.no-sidebar {
+            width: 100%;
+        }
     }
 }
