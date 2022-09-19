@@ -2,18 +2,16 @@
 doctype html
 html(lang="en")
     head
-        meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    include pug/layout/meta
         title #{pageTitle}
-        link(rel="stylesheet", href="css/style.css")
+    include pug/layout/style
 
     body 
-    <i class="fa-brands fa-facebook"></i>
         .page.home-page
-            include pug/layaout/sidebar
-            .content-area content
-                h1 #{pageTitle}
-                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, iusto. Eveniet obcaecati nobis quasi quia doloribus sit reiciendis, eos exercitationem accusamus temporibus libero enim, explicabo illo, rerum dolorem eum neque.
-                
-    script(src="http://localhost:35729/livereload.js?snipver=1") 
+            include pug/layout/sidebar
+            .content-area 
+                include pug/layout/header
+                .content
+                    h1 #{pageTitle}
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit excepturi nulla ipsam debitis maiores, veritatis neque odit quo. Necessitatibus aperiam itaque ex quae. Inventore aut aperiam incidunt assumenda nobis.
+    include pug/layout/scripts
